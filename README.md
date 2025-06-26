@@ -1,7 +1,7 @@
 # ToDoアプリ（Vanilla JavaScript版）
 
 ## 📘 概要
-Udemy講座「モダンJavaScriptの基礎から始めるReact入門」内のステップとして、Reactを使う前に純粋なJavaScript（Vanilla JS）でToDoアプリを実装しました。
+Udemy講座「モダンJavaScriptの基礎から始めるReact入門」内のステップとして、Reactを使う前に純粋なJavaScript（Vanilla JS）でToDoアプリを実装しました。それをこれから、モダンJavaScriptを使って書き換えます。
 
 ## 🛠 使用技術
 - HTML
