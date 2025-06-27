@@ -1,13 +1,17 @@
+
+
+// 入力した値を変数に入れる関数を定義
 const onClickAdd = () => {
     // テキストボックスの値を取得し、初期化する
     const inputText = document.getElementById("add-text").value;
     document.getElementById("add-text").value ="";
 
-    // 未完了リストに追加
+    // 未完了リストを作る関数を実行（引数は入力した値の変数）
     createIncompleteTodo(inputText);
 }
 
-// 渡された引数を元に未完了のTODOを作成する関数
+
+// 渡された引数を元に未完了のTODOを作成する関数の定義
 const createIncompleteTodo = (todo) => {
 
 // li生成
@@ -66,4 +70,5 @@ const createIncompleteTodo = (todo) => {
 
 };
 
+// ボタンがクリックされたら、onClickAddという関数を実行
 document.getElementById("add-button").addEventListener("click",onClickAdd);
