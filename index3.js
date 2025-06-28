@@ -9,14 +9,14 @@
                 document.getElementById("add-text").value ="";
 
                 if (inputText === "")return;
-                const todos = [...todos, inputText];
+                todos = [...todos, inputText];
             // 未完了リストを作る関数を実行（引数は入力した値の変数）
+             renderTodos();
+        };
+
         const renderTodos = () => {
             console.log(todos)
-        }};
-
-renderTodos();
-
+        };
 
 // 3. イベント登録（イベントまとめゾーン）
     // ボタンがクリックされたら、onClickAddという関数を実行
