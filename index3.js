@@ -13,7 +13,7 @@
                 if (inputText === "")return;
                 incompleteTodostodos = [...incompleteTodostodos, inputText];
             // 未完了リストを作る関数を実行（引数は入力した値の変数）
-                renderTodos(todos);
+                renderTodos(todo);
         };
 
         const renderTodos = (todo) => {
