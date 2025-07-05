@@ -1,3 +1,7 @@
+// リファクタリングの第１弾
+// 入力した値を、その度に追加して描画している。
+// ボタン機能や、完了リストなどは未実装
+
 // 1. 定数やDOM取得
     let inputText = "";
     let incompleteTodostodos =[];
@@ -13,7 +17,8 @@
                 if (inputText === "")return;
                 incompleteTodostodos = [...incompleteTodostodos, inputText];
             // 未完了リストを作る関数を実行（引数は入力した値の変数）
-                renderTodos(todo);
+            // 入力した値を、すでに描画している画面に、追加で記述している。
+                renderTodos(inputText);
         };
 
         const renderTodos = (todo) => {
@@ -37,7 +42,6 @@
                 div.appendChild(completeButton);
                 div.appendChild(deleteButton);
                 li.appendChild(div);
-                console.log(li);
             // 未完了リストに追加
                 document.getElementById("incomplete-list").appendChild(li);
         };
